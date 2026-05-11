@@ -31,10 +31,10 @@
 
 ## 4. AWS 배포 URL
 
-Github Actions :
-AWS Amplify :
+- Github Actions :
+- AWS Amplify :
 
 ## 5. CI/CD 구축 시연 영상 (YouTube)
 
-Github Actions : https://youtu.be/lk1IAvLxQQc
-AWS Amplify :
+- Github Actions : https://youtu.be/lk1IAvLxQQc
+- AWS Amplify : https://youtu.be/7RAXNqBl9hE
