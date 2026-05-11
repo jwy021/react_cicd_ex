@@ -31,8 +31,8 @@
 
 ## 4. AWS 배포 URL
 
-- Github Actions :
-- AWS Amplify :
+- Github Actions : http://20263565.s3-website-us-east-1.amazonaws.com/
+- AWS Amplify : https://main.d3nwy49ptyj9z8.amplifyapp.com/
 
 ## 5. CI/CD 구축 시연 영상 (YouTube)
 
