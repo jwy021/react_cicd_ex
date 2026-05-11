@@ -1,3 +1,4 @@
+/* 기본 레이아웃 */
 .container {
   min-height: 100vh;
   background-color: #f4f7f6;
@@ -5,12 +6,14 @@
   justify-content: center;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
 }
 
-.card {
+/* 대시보드 카드로 확장 (너비 증가) */
+.dashboard-card {
   background-color: #ffffff;
   width: 100%;
-  max-width: 500px;
+  max-width: 850px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -20,12 +23,30 @@
 .header {
   color: #002244;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 24px;
   letter-spacing: -0.5px;
 }
 
+/* 좌우 분할 레이아웃 */
+.dashboard-content {
+  display: flex;
+  gap: 30px;
+}
+
+.calendar-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-section {
+  flex: 1;
+}
+
+/* 투두리스트 입력창 및 버튼 */
 .input-container {
   display: flex;
   margin-bottom: 20px;
@@ -61,10 +82,13 @@
   background-color: #003a75;
 }
 
+/* 투두리스트 목록 */
 .list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .empty-message {
@@ -108,4 +132,77 @@
 
 .delete-btn:hover {
   text-decoration: underline;
+}
+
+/* 날짜 표시 텍스트 */
+.date-display {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #00509E;
+}
+
+/* React Calendar 커스텀 (딥 블루/네이비 톤) */
+.react-calendar {
+  width: 100%;
+  border: none !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  font-family: inherit;
+}
+
+.react-calendar__navigation button {
+  color: #002244;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #f1f5f9;
+}
+
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #00509E;
+  font-size: 0.8em;
+}
+
+.react-calendar__tile {
+  padding: 10px 0.5em;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #f1f5f9;
+  border-radius: 6px;
+}
+
+.react-calendar__tile--now {
+  background: #e2e8f0 !important;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.react-calendar__tile--active {
+  background: #00509E !important;
+  color: white !important;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* 모바일/작은 화면 대응 */
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column;
+  }
 }
