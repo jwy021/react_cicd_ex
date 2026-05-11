@@ -31,11 +31,10 @@
 
 ## 4. AWS 배포 URL
 
-👉 **[여기에 S3 정적 웹사이트 호스팅 엔드포인트 URL을 붙여넣으세요]**
-_(참고: AWS Academy Learner Lab 환경의 제약으로 인해 해당 URL은 세션이 유지되는 4시간 동안만 유효합니다.)_
+Github Actions :
+AWS Amplify :
 
 ## 5. CI/CD 구축 시연 영상 (YouTube)
 
-👉 **[여기에 유튜브에 업로드한 시연 영상 링크를 붙여넣으세요]**
-
-- 영상 내용: 코드 푸시 -> Github Actions 파이프라인 자동 실행 -> AWS S3 배포 완료 및 실제 웹사이트 접속 확인 과정
+Github Actions : https://youtu.be/lk1IAvLxQQc
+AWS Amplify :
